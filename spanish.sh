@@ -1,4 +1,4 @@
-# spanish-unblocker -- gets links to unblock for AP Spanish
+# discerning-link-block -- finds specific vimeo links on a website that are appropriate for school
 # version 1.0, December 20th, 2019
 #
 # Copyright (C) 2019 Armend Murtishi
