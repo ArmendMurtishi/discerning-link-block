@@ -1,7 +1,7 @@
 #!/bin/sh
 
 tmp=$(mktemp)
-#trap "rm -f $tmp" 0
+trap "rm -f $tmp" 0
 
 if test $# != 0
 then
