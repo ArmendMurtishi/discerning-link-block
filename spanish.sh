@@ -34,7 +34,7 @@ then
         wget -q -O "$tmp" "$1"
         escaped=$(echo "$1" | sed "s/\//\\\\\//g" -)
         wget -q -O "$tmp" $(sed -n "s/.*'\(.*popup.*\)'.*/$escaped\1/p" "$tmp")
-        sed -n 's/.*"\(.*vimeo.*\)".*/\1/p' "$tmp"
+        sed -n 's/.*"\(.*vimeo.*\)".*".*".*/\1/p' "$tmp"
         shift
     done
     exit
